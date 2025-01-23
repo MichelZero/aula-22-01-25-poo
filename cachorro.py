@@ -13,5 +13,9 @@ class Cachorro(Animal):
     self.raca_cachorro = raca_cachorro
 
   def mostrar_detalhes(self):
-    super().mostrar_detalhes()
+    super().mostrarDetalhes()
     print(f"Raça do cachorro: {self.raca_cachorro}")
+
+# analise do erro
+# imprima o MRO da classe Cachorro
+print(Cachorro.mro())

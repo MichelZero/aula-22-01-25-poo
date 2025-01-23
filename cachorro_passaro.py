@@ -9,8 +9,14 @@ class CachorroPassaro(Cachorro, Passaro):
         Cachorro.__init__(self, nome, idade, raca_cachorro)
         Passaro.__init__(self, nome, idade, envergadura)
         self.caracteristicas_combinadas = caracteristicas_combinadas
+    
 
     def mostrar_detalhes(self):
         Cachorro.mostrar_detalhes(self)
         Passaro.mostrar_detalhes(self)
-        print(f"Características combinadas: {self.características_combinadas}")
+        print(f"Características combinadas: {self.caracteristicas_combinadas}")
+
+
+# analise do erro
+# imprima o MRO da classe CachorroPassaro
+print(CachorroPassaro.mro())
